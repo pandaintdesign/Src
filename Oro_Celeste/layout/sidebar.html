@@ -1,0 +1,134 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-0yd7vjr-1">
+  <!--@css(/layout/basic/css/slideMenu.css)-->
+  <!--@js(/layout/basic/js/slide_menu.js)-->
+  <div class="navigation_member">
+    <div class="side_logo" module="Layout_LogoTop">
+      <a href="/"><img src="{$logo}" alt="{$mall_name}" /></a>
+    </div>
+
+    <div
+      class="navigation_state"
+      data-ez-group="top-util-menu"
+      data-ez-role="list"
+    >
+      <a
+        data-ez-item="join"
+        module="Layout_statelogoff"
+        href="/member/agreement.html"
+        style="font-weight: bold"
+        >회원가입</a
+      >
+      <a
+        data-ez-item="login"
+        module="Layout_statelogoff"
+        href="/member/login.html"
+        style="font-weight: bold"
+        >로그인</a
+      >
+      <a
+        data-ez-item="modify"
+        module="Layout_stateLogon"
+        href="/member/modify.html"
+        >내정보수정</a
+      >
+      <a
+        data-ez-item="logout"
+        module="Layout_stateLogon"
+        href="{$action_logout}"
+        >로그아웃</a
+      >
+      <a
+        data-ez-item="order"
+        href="/myshop/order/list.html"
+        style="font-weight: bold"
+        >주문조회</a
+      >
+      <a
+        data-ez-item="mypage"
+        module="Layout_stateLogon"
+        href="/myshop/index.html"
+        >마이페이지</a
+      >
+      <a
+        data-ez-item="recent"
+        href="/product/recent_view_product.html"
+        style="font-weight: bold"
+        >최근본상품</a
+      >
+    </div>
+    <!-- //navigation_state -->
+  </div>
+  <!-- //navigation_member -->
+
+  <nav class="navigation-menu" role="navigation">
+    <div data-ez-module="menu-side/1">
+      <div id="slideCateList" class="navigation-menu__category">
+        <ul id="slide_add_category">
+          <li>
+            <a href="/board/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/" class="view"
+              >브랜드소개</a
+            >
+          </li>
+          <li>
+            <a
+              href="/category/%EA%B5%AC%EB%A7%A4%ED%95%98%EA%B8%B0/81/"
+              class="view"
+              >올리브오일</a
+            >
+          </li>
+          <li>
+            <a href="/board/%EC%83%81%ED%92%88-QA/6/" class="view">고객문의</a>
+          </li>
+          <li>
+            <a
+              href="/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/"
+              class="view"
+              >구매후기</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- //menu-side/1 -->
+
+    <div class="cboth slide_line"></div>
+
+    <div module="Layout_BoardInfo" class="navigation-menu__board">
+      <div class="title">
+        고객센터<button type="button" class="icoCategory">펼침</button>
+      </div>
+      <ul class="categoryList">
+        <li>
+          <a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}
+        </li>
+        <li>
+          <a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}
+        </li>
+      </ul>
+    </div>
+    <!-- //navigation-menu__board -->
+
+    <div
+      module="Layout_multishopList"
+      data-ez-config-display="F"
+      style="display: none"
+    >
+      <button type="button" class="toggle">
+        {$current_language}
+        <i aria-hidden="true" class="icon icoArrowBottom"></i>
+      </button>
+      <ul module="Layout_multishopListitem">
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button type="button" class="btnClose">
+    <i aria-hidden="true" class="icon icoClose"></i>닫기
+  </button>
+</aside>
+<!--#ez="1/18"-->

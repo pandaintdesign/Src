@@ -1,4 +1,11 @@
 /*common*/
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .div {
     font-size: 0;
     line-height: 0;
@@ -236,11 +243,8 @@ section {
 #layout #container.inner,
 #layout.wide .inner,
 .add-inner {
-    max-width: 1980px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 60px;
-    padding-right: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .inner.wide {

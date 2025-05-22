@@ -1,0 +1,432 @@
+/* 푸터 */
+#footer {
+    width: 100%;
+    background-color: #292929;
+}
+
+#footer .footer-wrapper {
+    position: relative;
+}
+
+#footer .footer-wrapper>li {
+    display: block;
+}
+
+#footer .tit {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+
+/* info */
+.bt_logo {
+    width: 200px;
+}
+
+.bt_logo img {
+    display: block;
+    transform-origin: 0% 0%;
+    transform: scale(0.5);
+    width: 100%;
+}
+
+.bt_util li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.bt_util li a {
+    display: block;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.bt_util li strong {
+    font-weight: 500;
+}
+
+.bt_info {
+    line-height: 1.7;
+    color: #aaa;
+    word-break: break-word;
+}
+
+.bt_info li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.bt_info li a {
+    color: #aaa;
+}
+
+.bt_info span {
+    color: #888;
+}
+
+.bt_info span:after {
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    width: 1px;
+    height: 9px;
+    margin: 0 6px;
+    vertical-align: 0;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    opacity: 0.4;
+}
+
+
+/* cs */
+.bt_cs .num {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #fff;
+    cursor: text;
+    margin-bottom: 2px;
+}
+
+.bt_cs .time {
+    color: #aaa;
+}
+
+.bt_cs .time br {
+    display: none;
+}
+
+
+/* 계좌정보 */
+.bt_bank {
+    margin: 0 5px 0 0;
+}
+
+.bt_bank li {
+    color: #fff;
+}
+
+.bt_bank li.acc-holder {
+    color: #aaa;
+    margin-top: 2px;
+}
+
+
+/* 멀티샵 */
+.bt_mshop {
+    position: relative;
+    max-width: 200px;
+}
+
+.bt_mshop .toggle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #757575;
+    background-color: #eee;
+    text-align: left;
+}
+
+.bt_mshop .toggle span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('//img.echosting.cafe24.com/skin/base/layout/ico_multishop1.png') no-repeat 100% 50%;
+}
+
+.bt_mshop .toggle span>img {
+    vertical-align: middle;
+}
+
+.bt_mshop ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    text-align: left;
+    z-index: 9;
+}
+
+.bt_mshop ul li {
+    position: relative;
+}
+
+.bt_mshop ul li a {
+    display: block;
+    overflow: hidden;
+    color: #666;
+    padding: 0 60px 0 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+
+.bt_mshop ul li.selected a {
+    background-color: #e8e8e8;
+}
+
+.bt_mshop ul li a img {
+    position: absolute;
+}
+
+.bt_mshop ul li a .unit {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #757575;
+}
+
+.bt_mshop.show>ul {
+    display: block;
+}
+
+
+/* 에스크로 */
+.footer-bottom {
+    background-color: #292929;
+    border-top: 1px solid #444;
+}
+
+.bt_copyright {
+    font-weight: normal;
+    color: #888;
+    line-height: 1;
+}
+
+.escrow p {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.escrow .btn-escrow {
+    font-size: 10px;
+    line-height: 23px;
+    color: #fff;
+    display: inline-block;
+    padding: 0 9px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+/*모바일*/
+@media all and (max-width:1180px) {
+    #footer {
+        text-align: center;
+    }
+
+    #footer .footer-inner {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    #footer .footer-wrapper {
+        display: block;
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    #footer .footer-wrapper>li {
+        display: block;
+        padding-top: 30px;
+    }
+
+    #footer .footer-wrapper>li:first-child {
+        padding-top: 0;
+    }
+
+    #footer .tit {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .bt_util {
+        margin: 0 0 18px;
+    }
+
+    .bt_logo {
+        width: 320px;
+        margin: 0 auto 26px;
+    }
+
+    .bt_logo img {
+        display: block;
+        margin: 0 auto;
+        transform-origin: 50% 100%;
+        transform: scale(0.28);
+    }
+
+    .bt_info {
+        margin: 10px 0 0;
+    }
+
+    .bt_info li {
+        margin: 0 4px;
+    }
+
+    .bt_cs .num {
+        font-size: 17px;
+    }
+
+    .bt_mshop {
+        display: block;
+        width: 140px;
+        height: 36px;
+        margin: 12px auto 0;
+    }
+
+    .bt_mshop .toggle {
+        padding: 0 10px 0 20px;
+        line-height: 36px;
+    }
+
+    .bt_mshop .toggle span {
+        font-size: 11px;
+        padding: 0 25px 0 0;
+    }
+
+    .bt_mshop>ul {
+        top: 36px;
+    }
+
+    .bt_mshop>ul li {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .bt_mshop>ul li a span {
+        font-size: 11px;
+    }
+
+    .bt_mshop>ul li a img {
+        left: 10px;
+        top: 9px;
+    }
+
+    .bt_mshop>ul li a .unit {
+        font-size: 10px;
+    }
+
+    #footer .follow a {
+        margin: 0 6px;
+    }
+
+    .footer-bottom {
+        padding: 30px 0;
+    }
+
+    .bt_copyright {
+        font-size: 10px;
+    }
+
+    .escrow p {
+        font-size: 11px;
+    }
+
+    .escrow .btn-escrow {
+        font-size: 9px;
+        margin: 10px 0 22px;
+    }
+}
+
+/*PC*/
+@media all and (min-width:1181px) {
+    #footer .footer-inner {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    #footer .footer-wrapper {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    #footer .footer-wrapper>li {
+        flex: 1;
+        padding-right: 70px;
+    }
+
+    #footer .footer-wrapper>li:nth-child(2) {
+        flex: 2.5;
+    }
+
+    #footer .footer-wrapper>li:last-child {
+        padding-right: 0;
+    }
+
+    .bt_info {
+        margin: 16px 0 0;
+    }
+
+    .bt_info li {
+        margin-right: 8px;
+    }
+
+    .bt_cs .num {
+        font-size: 18px;
+    }
+
+    .bt_mshop {
+        margin-bottom: 24px;
+    }
+
+    .bt_mshop .toggle {
+        padding: 0 10px 0 20px;
+        line-height: 41px;
+    }
+
+    .bt_mshop .toggle span {
+        font-size: 13px;
+        padding: 0 25px 0 0;
+    }
+
+    .bt_mshop>ul {
+        top: 41px;
+    }
+
+    .bt_mshop>ul li {
+        height: 41px;
+        line-height: 41px;
+    }
+
+    .bt_mshop>ul li a span {
+        font-size: 13px;
+    }
+
+    .bt_mshop>ul li a img {
+        left: 10px;
+        top: 9px;
+    }
+
+    .bt_mshop>ul li a .unit {
+        font-size: 11px;
+    }
+
+    .footer-bottom {
+        padding: 50px 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bt_copyright {
+        font-size: 12px;
+    }
+
+    .escrow {
+        display: flex;
+        align-items: center;
+    }
+
+    .escrow>* {
+        margin-right: 12px;
+    }
+}

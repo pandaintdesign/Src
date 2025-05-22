@@ -1,0 +1,447 @@
+body {
+    width: calc(100% + 1px) !important;
+    height: calc(100% + 1px) !important;
+    margin: -1px;
+    overflow: auto;
+}
+
+.noimg .imgView {
+    display: none;
+}
+
+.rvRead .imgView .imgView-wrapper,
+.rvRead .imgView form,
+.rvRead .imgView .swiper,
+.rvRead .imgView .swiper-wrapper,
+.rvRead .imgView .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.rvRead .imgView .swiper-slide {
+    position: relative;
+    background-color: #000;
+}
+
+.rvRead .imgView .swiper-slide img {
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.rvRead div[class*='swiper-button'] {
+    transform: scale(1.2);
+}
+
+.rvRead .swiper-button-prev {
+    transform-origin: 0% 50%;
+    left: 13px !important;
+}
+
+.rvRead .swiper-button-next {
+    transform-origin: 100% 50%;
+    right: 13px !important;
+}
+
+.rvRead .txtView {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.rvRead .txtView .xans-board-read {
+    padding: 40px 40px 20px;
+}
+
+.rvRead .txtView .ec-base-table {
+    border: 0;
+}
+
+.rvRead .txtView .head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px;
+}
+
+.rvRead .txtView .head:after {
+    position: absolute;
+    display: block;
+    width: calc(100% + 20px);
+    height: 1px;
+    background-color: #f0f0f0;
+    content: '';
+    left: -10px;
+    bottom: 0;
+}
+
+.rvRead .txtView .tmb {
+    flex: none;
+}
+
+.rvRead .txtView .tmb img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+}
+
+.rvRead .txtView .desc {
+    padding-right: 20px;
+}
+
+.rvRead .txtView .desc>* {
+    display: block;
+    line-height: 1.55;
+    margin: 3px 0;
+}
+
+.rvRead .txtView .rvsbj {
+    display: block !important;
+    overflow: initial !important;
+    -webkit-box-orient: unset !important;
+}
+
+.rvRead .txtView .rvsbj .adminAnswer {
+    display: none;
+}
+
+.rvRead .txtView .point {
+    margin: 0 0 6px -1px;
+}
+
+.rvRead .txtView .point img {
+    display: block;
+    width: auto;
+    height: 13px;
+}
+
+.rvRead .txtView .date {
+    margin: 0 0 0 5px;
+}
+
+.rvRead .txtView .rvcont {
+    padding: 21px 0;
+}
+
+.rvRead .txtView .rvcont,
+.rvRead .txtView .rvcont p {
+    line-height: 1.6 !important;
+}
+
+.rvRead .txtView .recom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 21px 0 0;
+}
+
+.rvRead .txtView .recom p {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.rvRead .txtView .recom p span {
+    font-weight: 500;
+    margin-right: 1px;
+}
+
+.rvRead .txtView .recom .btnNormal {
+    font-size: 11px;
+    padding: 8px 11px;
+    margin-bottom: -1px;
+}
+
+.rvRead .txtView .ec-base-button {
+    padding: 0;
+}
+
+.rvRead .txtView .ec-base-button .btnNormal {
+    margin-top: 30px;
+}
+
+.rvRead .txtView .xans-board-commentlist {
+    margin: 0;
+    border: 0;
+    padding: 0 35px;
+}
+
+.rvRead .txtView .boardComment>li {
+    padding: 28px 35px 12px !important;
+}
+
+.rvRead .txtView .boardComment>li .comment {
+    line-height: 1.6 !important;
+}
+
+.rvRead .txtView .boardComment>li div.commentTop {
+    margin: 0;
+}
+
+.rvRead .txtView .xans-board-commentwrite {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.rvRead .txtView .xans-board-commentwrite>div {
+    padding: 40px 40px 0;
+}
+
+/*모바일*/
+.rvRead.mobile .txtView {
+    padding-bottom: 27px;
+}
+
+.rvRead.mobile .txtView .xans-board-read {
+    padding: 27px 27px 17px;
+}
+
+.rvRead.mobile .txtView .head {
+    padding: 0 0 14px;
+}
+
+.rvRead.mobile .txtView .desc>* {
+    margin: 0;
+}
+
+.rvRead.mobile .txtView .rvname {
+    font-size: 10px !important;
+}
+
+.rvRead.mobile .txtView .date {
+    font-size: 10px !important;
+}
+
+.rvRead.mobile .txtView .point {
+    margin-bottom: 7px;
+}
+
+.rvRead.mobile .txtView .point img {
+    height: 11px;
+}
+
+.rvRead.mobile .txtView .rvsbj {
+    font-size: 13px !important;
+}
+
+.rvRead.mobile .txtView .rvcont {
+    padding: 16px 0;
+}
+
+.rvRead.mobile .txtView .rvcont,
+.rvRead.mobile .txtView .rvcont p {
+    font-size: 12px !important;
+}
+
+.rvRead.mobile .txtView .recom {
+    padding: 16px 0 0;
+    justify-content: flex-start;
+}
+
+.rvRead.mobile .txtView .recom p {
+    font-size: 11px;
+}
+
+.rvRead.mobile .txtView .recom .btnNormal {
+    padding: 6px 8px;
+}
+
+.rvRead.mobile .txtView .xans-board-commentlist {
+    padding: 0 25px;
+}
+
+.rvRead.mobile .txtView .boardComment>li {
+    padding: 20px 27px 4px !important;
+}
+
+.rvRead.mobile .txtView .boardComment>li .comment {
+    font-size: 12px !important;
+    margin-top: 5px !important;
+}
+
+.rvRead.mobile .txtView .xans-board-commentwrite>div {
+    padding: 25px 25px 0;
+}
+
+.rvRead.mobile .txtView .tmb img {
+    width: 44px;
+    height: 44px;
+}
+
+
+/*PC*/
+.rvRead.pcwin .txtView .rvname {
+    font-size: 12px !important;
+}
+
+.rvRead.pcwin .txtView .date {
+    font-size: 11px !important;
+}
+
+.rvRead.pcwin .txtView .rvsbj {
+    font-size: 15px !important;
+}
+
+.rvRead.pcwin .txtView .rvcont,
+.rvRead.pcwin .txtView .rvcont p {
+    font-size: 14px !important;
+}
+
+.rvRead.pcwin .txtView .boardComment>li .comment {
+    font-size: 13px !important;
+}
+
+.rvRead.pcwin .txtView .boardComment>li .name {
+    font-size: 12px !important;
+}
+
+
+/*모달창크기적용*/
+@media all and (max-width:480px) {
+    .rvRead {
+        display: block;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .rvRead>div {
+        width: 100%;
+    }
+
+    .rvRead .imgView {
+        height: 70vh;
+        max-height: 480px;
+    }
+
+    .rvRead .txtView {
+        padding-bottom: 20px;
+    }
+
+    .rvRead .txtView .xans-board-read {
+        padding: 27px 27px 17px;
+    }
+
+    .rvRead .txtView .head {
+        padding: 0 0 14px;
+    }
+
+    .rvRead .txtView .desc>* {
+        margin: 0;
+    }
+
+    .rvRead.pcwin .txtView .rvname {
+        font-size: 10px !important;
+    }
+
+    .rvRead.pcwin .txtView .date {
+        font-size: 10px !important;
+    }
+
+    .rvRead.pcwin .txtView .point {
+        margin-bottom: 7px;
+    }
+
+    .rvRead.pcwin .txtView .point img {
+        height: 11px;
+    }
+
+    .rvRead.pcwin .txtView .rvsbj {
+        font-size: 13px !important;
+    }
+
+    .rvRead.pcwin .txtView .rvcont {
+        padding: 16px 0;
+    }
+
+    .rvRead.pcwin .txtView .rvcont,
+    .rvRead.pcwin .txtView .rvcont p {
+        font-size: 12px !important;
+    }
+
+    .rvRead.pcwin .txtView .recom {
+        padding: 16px 0 0;
+        justify-content: flex-start;
+    }
+
+    .rvRead.pcwin .txtView .recom p {
+        font-size: 11px;
+    }
+
+    .rvRead.pcwin .txtView .recom .btnNormal {
+        padding: 6px 8px;
+    }
+
+    .rvRead.pcwin .txtView .xans-board-commentlist {
+        padding: 0 25px;
+    }
+
+    .rvRead.pcwin .txtView .boardComment>li {
+        padding: 20px 27px 4px !important;
+    }
+
+    .rvRead.pcwin .txtView .boardComment>li .comment {
+        font-size: 12px !important;
+        margin-top: 5px !important;
+    }
+
+    .rvRead.pcwin .txtView .xans-board-commentwrite>div {
+        padding: 25px 25px 0;
+    }
+
+    .rvRead.pcwin .txtView .tmb img {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media all and (max-width:780px) {
+    .rvRead {
+        display: block;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .rvRead>div {
+        width: 100%;
+    }
+
+    .rvRead .imgView {
+        height: 70vh;
+        max-height: 480px;
+    }
+}
+
+@media all and (min-width:781px) {
+    .rvRead {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .rvRead>div {
+        flex: 1;
+        flex-basis: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .rvRead .txtView {
+        overflow: auto;
+    }
+
+    .rvRead .txtView .xans-board-read {
+        overflow: auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+#popup_idio {
+    position: fixed;
+    z-index: 10003;
+    top: auto;
+    left: auto;
+    right: 40px;
+    bottom: 0;
+}
+
+#popup_idio.opened {
+    display: block !important;
+}
+
+#popup_idio .popup_wrapper {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    border-radius: 22px 22px 0 0;
+}
+
+#popup_idio .swiper-slide img,
+#popup_idio .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#popup_idio div[class*='swiper-button'] {
+    opacity: 0 !important;
+    width: 28px;
+    height: 28px;
+}
+
+#popup_idio .swiper:hover div[class*='swiper-button'] {
+    opacity: 0.85 !important;
+}
+
+#popup_idio div[class*='swiper-button']:after {
+    font-size: 11px;
+    line-height: 28px;
+}
+
+#popup_idio .swiper-button-prev {
+    left: 22px !important;
+}
+
+#popup_idio .swiper-button-next {
+    right: 22px !important;
+}
+
+#popup_idio .cont {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#popup_idio .footer {
+    width: 100%;
+    height: 46px;
+    background-color: #292929;
+    position: relative;
+}
+
+#popup_idio .footer>* {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 3;
+    font-size: 13px;
+    color: #fff;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+#popup_idio .footer .cookieToday {
+    left: 20px;
+}
+
+#popup_idio .footer .cookieToday #chkday {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#popup_idio .footer #closeNow {
+    right: 20px;
+}
+
+
+@media all and (max-width:1024px) {
+    #popup_idio .popup_wrapper {
+        width: 360px;
+    }
+}
+
+@media all and (max-width:640px) {
+    #popup_idio {
+        left: 50%;
+        right: unset;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+    #popup_idio .popup_wrapper {
+        width: 340px;
+    }
+
+    #popup_idio .footer {
+        height: 44px;
+    }
+
+    #popup_idio .footer>* {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:380px) {
+
+    #popup_idio,
+    #popup_idio .popup_wrapper {
+        width: 100%;
+    }
+
+    #popup_idio .popup_wrapper {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+}

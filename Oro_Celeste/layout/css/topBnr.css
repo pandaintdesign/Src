@@ -1,0 +1,70 @@
+#topBnr {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#topBnr .topBnr_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#topBnr .cont {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#topBnr .swiper-slide {
+    display: block;
+    width: 100%;
+    background-color: #252525;
+}
+
+#topBnr .swiper-slide>a {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #252525;
+    cursor: pointer;
+}
+
+#topBnr .swiper-slide>a>span {
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*탑배너 높이 일괄 지정*/
+#topBnr,
+#topBnr .swiper-slide>a {
+    height: 42px;
+}
+
+@media all and (max-width:1024px) {
+
+    #topBnr,
+    #topBnr .swiper-slide>a {
+        height: 35px;
+    }
+
+    #topBnr .swiper-slide>a>span {
+        font-size: 11px;
+    }
+}

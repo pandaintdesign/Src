@@ -1,0 +1,229 @@
+/*특장점*/
+#ipromo {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    width: 100% !important;
+    max-width: 700px;
+    height: 100%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#ipromo.opened {
+    display: block !important;
+}
+
+#ipromo-bg {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 10005;
+}
+
+#layout #ipromo,
+#layout #ipromo-bg,
+#popup #ipromo,
+#popup #ipromo-bg {
+    display: none !important;
+}
+
+#ipromo .ipromo-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#ipromo .swiper-wrapper {
+    position: absolute;
+    width: 100%;
+    height: unset !important;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#ipromo .swiper-slide {
+    position: relative;
+    width: 100% !important;
+    max-width: 700px;
+    padding-bottom: 100%;
+    opacity: 0 !important;
+}
+
+#ipromo .swiper-slide-active {
+    opacity: 1 !important;
+}
+
+#ipromo .swiper-slide>div {
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+#ipromo .swiper-slide:first-child>div {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#ipromo .swiper-slide img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#ipromo .swiper-slide img.ipromo_rsp {
+    margin-top: 44.4%;
+    z-index: 2;
+    border-radius: 7px;
+    max-width: 62%;
+    height: auto;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+#ipromo .swiper div[class*='swiper-button'] {
+    background-color: #444;
+    width: 42px;
+    height: 52px;
+    border-radius: 5px;
+    padding-left: 2px;
+    opacity: 1 !important;
+}
+
+#ipromo .swiper div[class*='swiper-button']:after {
+    font-size: 15px;
+    color: #fff;
+}
+
+#ipromo .swiper-button-next {
+    right: 22px !important;
+}
+
+#ipromo .swiper-button-lock {
+    display: block !important;
+}
+
+#ipromo .cont {
+    width: 100%;
+    height: 100%;
+}
+
+#ipromo .cookieToday {
+    display: block;
+    width: 60px !important;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    bottom: 0;
+}
+
+#ipromo .cookieToday input {
+    display: none;
+}
+
+#ipromo #ipromo_btn_close {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #444;
+    cursor: pointer;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    transition: all 0.3s ease;
+}
+
+#ipromo #ipromo_btn_close:hover {
+    background-color: #3261f6;
+}
+
+#ipromo #ipromo_btn_close .line {
+    position: absolute;
+    background-color: #fff;
+    overflow: hidden;
+    height: 1px;
+    width: 21px;
+    left: 20px;
+    top: 29px;
+}
+
+#ipromo #ipromo_btn_close .line:nth-child(1) {
+    -webkit-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+}
+
+
+
+
+/*경고*/
+#idiowarns {
+    display: none;
+    position: fixed;
+    width: 490px;
+    bottom: 30px;
+    left: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 15px 21px 6px;
+    font-size: 11px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #fff;
+    word-break: keep-all;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999999999;
+    letter-spacing: -.1px;
+}
+
+#idiowarns #iwchkday {
+    display: none;
+}
+
+#idiowarns .idiowarns_close {
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 11px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0.5;
+}
+
+#idiowarns span {
+    display: block;
+    margin-top: 8px;
+    border-top: 1px solid #777;
+    opacity: 0.6;
+    line-height: 33px;
+}
+
+#layout #idiowarns,
+#popup #idiowarns {
+    display: none !important;
+}
+
+@media all and (max-width:550px) {
+    #idiowarns {
+        width: 80%;
+        min-width: 300px;
+    }
+}

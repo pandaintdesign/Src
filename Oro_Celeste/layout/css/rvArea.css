@@ -1,0 +1,33 @@
+.rvArea .main_title {
+    margin-bottom: -15px;
+}
+
+.rvArea .rvArea-wrapper {
+    position: relative;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    min-height: 200px;
+}
+
+.rvArea .btn_arr {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.rvArea .btn_arr:after {
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+}
+
+@media all and (max-width:1024px) {
+    .rvArea .main_title {
+        margin-bottom: 0;
+    }
+
+    .rvArea .rvArea-wrapper {
+        width: calc(100% + 12px);
+        margin-left: -6px;
+    }
+}

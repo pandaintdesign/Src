@@ -1,0 +1,128 @@
+#scrollTop {
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 48px;
+    height: 81px;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+    z-index: -1;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+#scrollTop.on {
+    z-index: 10;
+    opacity: 0.7;
+}
+
+#scrollTop.on:hover {
+    opacity: 0.9;
+}
+
+#scrollTop>li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#scrollTop>li:first-child {
+    border-bottom: 1px solid #eee;
+}
+
+#scrollTop>li i {
+    font-size: 12px;
+    color: #999;
+    line-height: 40px;
+}
+
+#btn_talk {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #252525;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+#btn_talk a {
+    display: block;
+}
+
+#btn_talk i {
+    font-size: 19px;
+    color: #fff;
+    line-height: 58px;
+}
+
+@media all and (max-width:1024px) {
+    #scrollTop {
+        width: 42px;
+        height: 69px;
+        right: 20px;
+        bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    #scrollTop>li i {
+        line-height: 34px;
+    }
+
+    #btn_talk {
+        width: 52px;
+        height: 52px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #btn_talk.pb {
+        margin-bottom: 66px;
+    }
+
+    #btn_talk i {
+        line-height: 52px;
+    }
+}
+
+@media all and (max-width:767px) {
+    #scrollTop {
+        width: 38px;
+        height: 61px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    #scrollTop>li i {
+        line-height: 30px;
+    }
+
+    #btn_talk {
+        width: 48px;
+        height: 48px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    #btn_talk i {
+        line-height: 48px;
+    }
+}
+
+@media all and (min-width:1025px) {
+    #btn_talk:hover {
+        bottom: 35px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+    }
+}

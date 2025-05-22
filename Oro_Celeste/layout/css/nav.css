@@ -1,0 +1,650 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002;
+    width: 100%;
+    height: 90px;
+    padding-top: 16px;
+}
+
+.nav.fixed {
+    height: 74px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+}
+
+.nav>.nav_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.nav a[class*='ic_'] {
+    display: inline-block;
+    width: 28px;
+    height: 100%;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 28px auto;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    vertical-align: middle;
+}
+
+/* logo */
+.nav .logo {
+    position: absolute;
+    bottom: 0;
+    height: 74px;
+    z-index: 2;
+    width: 320px;
+    left: 0;
+    overflow: hidden;
+    padding-left: 60px;
+}
+
+.nav .logo .logo_img {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+}
+
+.nav .logo .logo_img div a {
+    display: inline-block;
+}
+
+.nav .logo .logo_img div img {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav .logo .logo_img .logo_wh {
+    opacity: 0;
+}
+
+.nav .logo .logo_img .logo_bk {
+    opacity: 1;
+}
+
+.nav .btn_wrapper {
+    margin-right: 12px;
+    width: 23px;
+    height: 74px;
+    position: relative;
+}
+
+.nav .menu_btn {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    overflow: visible;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease-out 0ms;
+    -moz-transition: all 400ms ease-out 0ms;
+    -o-transition: all 400ms ease-out 0ms;
+    transition: all 400ms ease-out 0ms;
+}
+
+.nav .menu_btn .line {
+    position: absolute;
+    background-color: #333;
+    overflow: hidden;
+    width: 17px;
+    height: 2px;
+    left: 0;
+    border-radius: 1px;
+    -webkit-transition: all 400ms ease-out 0ms;
+    -moz-transition: all 400ms ease-out 0ms;
+    -o-transition: all 400ms ease-out 0ms;
+    transition: all 400ms ease-out 0ms;
+}
+
+.nav .sp_menu_anim {
+    transition: all 200ms;
+    animation: equalizer 5000ms infinite;
+}
+
+.nav .no_anim {
+    transition: none;
+}
+
+@keyframes equalizer {
+    0% {
+        width: 70%;
+    }
+
+    10% {
+        width: 60%;
+    }
+
+    20% {
+        width: 80%;
+    }
+
+    30% {
+        width: 50%;
+    }
+
+    40% {
+        width: 60%;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    60% {
+        width: 60%;
+    }
+
+    70% {
+        width: 50%;
+    }
+
+    80% {
+        width: 80%;
+    }
+
+    90% {
+        width: 50%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.nav .menu_btn .line:nth-child(1) {
+    bottom: 23px;
+    left: 0;
+    animation-delay: 0.33s;
+}
+
+.nav .menu_btn .line:nth-child(2) {
+    bottom: 16px;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.nav .menu_btn .line:nth-child(3) {
+    bottom: 9px;
+    left: 0;
+    animation-delay: 0.66s;
+}
+
+
+/* stateBox */
+.nav .stateBox {
+    position: absolute;
+    bottom: 0;
+    height: 74px;
+    z-index: 2;
+    width: 360px;
+    height: 74px;
+    right: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-align: right;
+    padding-right: 60px;
+    white-space: nowrap;
+}
+
+.nav .stateBox a[class*='ic_'] {
+    margin-left: 12px;
+}
+
+.nav .stateBox .ic_my {
+    background-image: url('/_idio/img/my_bk.svg');
+}
+
+.nav .stateBox .ic_sch {
+    background-image: url('/_idio/img/sch_bk.svg');
+}
+
+.nav .stateBox .ic_cart {
+    background-image: url('/_idio/img/cart_bk.svg');
+}
+
+.nav .stateBox .ic_cart div {
+    display: block;
+    position: absolute;
+    min-width: 18px;
+    text-align: center;
+    background-color: #cb4c00;
+    border-radius: 50%;
+    top: 18px;
+    right: -4px;
+}
+
+.nav .stateBox .ic_cart div span {
+    line-height: 18px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav .stateBox .gnb-btn {
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 0 15px;
+    line-height: 32px;
+    border-radius: 5px;
+    margin-left: 18px;
+    max-width: 160px;
+}
+
+
+/* gnb */
+.nav .gnbBox {
+    width: 100%;
+    padding: 0 260px;
+}
+
+.nav .gnbBox .gnbBox_wrapper {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.nav .gnbBox .gnbBox_wrapper>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav .gnbBox .d1Box {
+    white-space: nowrap;
+}
+
+.nav .gnbBox .d1 {
+    text-align: center;
+    margin: 0 14px;
+    position: relative;
+}
+
+.nav .gnbBox .d1>a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.nav .gnbBox .gnbR .d1>a {
+    font-size: 15.5px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.nav .gnbBox .gnb_bar {
+    width: 1px;
+    height: 24px;
+    margin: 25px 26px;
+    background-color: #999;
+    opacity: 0.3;
+    vertical-align: middle;
+}
+
+.nav .gnbBox .d2Box {
+    display: block;
+    width: 140px;
+    left: 50%;
+    margin-left: -70px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 60px;
+    border-radius: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background-color: #1a1a1a;
+}
+
+.nav .gnbBox .d1:hover .d2Box {
+    opacity: 1;
+    height: auto;
+    z-index: 99;
+}
+
+.nav .gnbBox .d2Box .d2 {
+    display: block;
+}
+
+.nav .gnbBox .d2Box .d2>a {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 24px;
+    font-weight: 500;
+    padding: 2px 0;
+    word-break: break-word;
+    white-space: normal;
+    border-radius: 3px;
+}
+
+.nav .gnbBox .d2Box .d2:hover>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: #090909;
+}
+
+.nav .gnbBox .d2Box .d2:first-child {
+    margin-top: 10px;
+}
+
+.nav .gnbBox .d2Box .d2:last-child {
+    margin-bottom: 10px;
+}
+
+
+/* nav-white */
+.main .nav.wh .logo .logo_img .logo_wh {
+    opacity: 1;
+}
+
+.main .nav.wh .logo .logo_img .logo_bk {
+    opacity: 0;
+}
+
+.main .nav.wh .gnbBox .gnb_bar {
+    background-color: #fff;
+}
+
+.main .nav.wh .gnbBox .d1>a {
+    color: #fff;
+}
+
+.main .nav.wh .ic_cart {
+    background-image: url('/_idio/img/cart_wh.svg');
+}
+
+.main .nav.wh .ic_my {
+    background-image: url('/_idio/img/my_wh.svg');
+}
+
+.main .nav.wh .ic_sch {
+    background-image: url('/_idio/img/sch_wh.svg');
+}
+
+.main .nav.wh .menu_btn .line {
+    background-color: #fff;
+}
+
+
+
+@media screen and (max-width:1360px) {
+    .nav .gnbBox .d1 {
+        margin: 0 8px !important;
+    }
+
+    .nav .gnbBox .d1>a {
+        font-size: 15px !important;
+    }
+
+    .nav .gnbBox .gnb_bar {
+        margin: 0 8px !important;
+    }
+}
+
+/* View All */
+.viewAll {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.viewAll.opened {
+    display: block;
+}
+
+.viewAll .viewAll_cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.viewAll .viewAll_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    z-index: 100001;
+    cursor: pointer;
+    background: url('/_idio/img/nav_close.png') no-repeat center center;
+}
+
+
+#viewAll {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#viewAll .depth1Box a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+#viewAll .depth1Box .depth1 {
+    width: 190px;
+    padding: 20px 10px;
+}
+
+#viewAll .depth1Box .depth1>a {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+#viewAll .depth2Box {
+    width: 100%;
+}
+
+#viewAll .depth2Box .depth2 {
+    width: 100%;
+    position: relative;
+    white-space: normal !important;
+    padding: 4px 0;
+}
+
+#viewAll .depth2Box .depth2>a {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #bbb;
+}
+
+#viewAll .depth2Box .depth2>a:hover {
+    color: #fff;
+}
+
+
+/* schArea */
+.schArea {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.schArea.opened {
+    display: block;
+}
+
+.schArea .sch_cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.schBox {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 7px;
+    width: 820px;
+    height: 220px;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.schBox .schHdr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 220px;
+    border: 20px solid transparent;
+}
+
+.schBox fieldset {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.schBox fieldset legend {
+    font-size: 30px;
+}
+
+.schBox fieldset:hover,
+.schBox fieldset:focus {
+    outline: 0;
+}
+
+.schBox fieldset .inputTypeText {
+    display: inline-block;
+    width: 100%;
+    font-size: 37px;
+    line-height: 100px;
+    padding: 0 35px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.schBox #keyword {
+    width: 100%;
+    height: 100px;
+    border: 0;
+    line-height: 100px;
+    font-size: 37px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+}
+
+.schBox .schBtn {
+    border: 0;
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    top: 36px;
+    right: 10px;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    opacity: 0.4;
+}
+
+.schBox .bestKeyword {
+    width: 100%;
+    height: 47px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.schBox .bestKeyword ul {
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.schBox .bestKeyword li {
+    margin: 0 5px;
+}
+
+.schBox .bestKeyword li a {
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    color: #555;
+    line-height: 47px;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(222, 222, 222, 0.55);
+    padding: 0 23px;
+    border-radius: 22px;
+}
+
+.schBox .bestKeyword li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.schBox p.button {
+    margin: 10px 0 0;
+    text-align: right;
+}
+
+.schBox p.button a {
+    padding: 0 17px 0 4px;
+    text-decoration: none;
+    background: url("//img.echosting.cafe24.com/skin/base/common/ico_circle_arrow.png") no-repeat right center;
+}

@@ -1,0 +1,67 @@
+.mainBnr {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mainBnr .swiper-slide {
+    height: 100vh;
+    font-size: 0;
+    line-height: 0;
+}
+
+.mainBnr .swiper-slide>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.mainBnr .swiper-slide>a img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mainBnr .swiper-pagination {
+    bottom: 45px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mainBnr:hover .swiper-pagination {
+    opacity: 1;
+}
+
+.mainBnr div[class*='swiper-button'] {
+    opacity: 0 !important;
+}
+
+.mainBnr .swiper:hover div[class*='swiper-button'] {
+    opacity: 0.4 !important;
+}
+
+.mainBnr .swiper-button-prev {
+    left: 4.5% !important;
+}
+
+.mainBnr .swiper-button-next {
+    right: 4.5% !important;
+}
+
+
+/*화면폭에 맞게 이미지 교체*/
+.mainBnr .swiper-slide>a img {
+    display: none;
+}
+
+body.pc .mainBnr .swiper-slide>a img.pc {
+    display: block;
+}
+
+body.mo .mainBnr .swiper-slide>a img.mo {
+    display: block;
+}

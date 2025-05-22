@@ -1,0 +1,20 @@
+.insta {
+    padding: 20px 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+.insta section {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    margin: 50px auto !important;
+}
+
+.insta iframe {
+    width: 100%;
+    height: 100% !important;
+}
+
+#instagramWidget {
+    display: none !important
+}

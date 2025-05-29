@@ -1,0 +1,391 @@
+h2 {
+    margin: 8px 0 15px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 8px 0 15px;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+.selectOroceleste {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.oroCeleste-wrap {
+    width: 100%;
+}
+
+.spain {
+    height: auto;
+    background: url(/oroceleste/mainbanner/almazaras_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.oroceleste_grade {
+    height: auto;
+    background: url(/oroceleste/mainbanner/oroceleste_grade_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.oroceleste_CheckPoint {
+    height: auto;
+    background: url(/oroceleste/mainbanner/checkPoint_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.spain .img_wrap {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1400px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.spain .img_wrap img {
+    margin: 0 auto;
+}
+
+.spain .img_wrap .prize_img_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+    width: 100%;
+}
+
+.spain .img_wrap .prize_img_wrap .prize {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 3개 열 */
+    gap: 20px;
+}
+
+.spain .img_wrap .prize_img_wrap .prize_title {
+    margin: 30px 0;
+}
+
+.spain .img_wrap .prize_img_wrap .prize li {
+    width: 160px;
+    height: 160px;
+}
+
+.prize_title {
+    text-align: center;
+}
+
+.section_content {
+    padding: 120px 60px;
+}
+
+.titleTxt {
+    text-align: center;
+    color: #fff;
+}
+
+.titleTxt p {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+}
+
+.oroCeleste-wrap .grade {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    color: #fff;
+}
+
+/*.oroCeleste-wrap .grade picture{
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+}
+
+.oroCeleste-wrap .grade picture img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}*/
+
+.oroCeleste-wrap .grade .grade-list {
+    width: 50%;
+}
+
+.oroCeleste-wrap .grade .grade-list li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: calc(426px / 5);
+}
+
+.oroCeleste-wrap .grade .grade-list li .num {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.oroCeleste-wrap .grade .grade-list li .txt {
+    margin: 8px 0 15px;
+    font-size: 16px;
+}
+
+.oroCeleste-wrap .grade .grade-list li .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.first {
+    color: #000;
+    background: linear-gradient(-45deg, #cead6a, #fff4d2, #fff8c2, #e7d395, #ffdc7a, #d99f47, #d69a43);
+}
+
+.second {
+    color: #fff;
+    background: #C09D44;
+}
+
+.tirtd {
+    color: #fff;
+    background: #E4CB8C;
+}
+
+.fourth {
+    color: #fff;
+    background: #AAA9A5;
+}
+
+.fifth {
+    color: #fff;
+    background: #1A502D;
+}
+
+.oroCeleste-wrap .grade .grade-list li .txt .type {
+    font-weight: 700;
+}
+
+.oroceleste_CheckPoint .certification {
+    width: 1400px;
+    margin: 40px auto;
+}
+
+.oroceleste_CheckPoint .certification .certification-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.oroceleste_CheckPoint .certification .certification-list li .type {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.oroceleste_CheckPoint .certification .certification-list li .text {
+    font-size: 16px;
+    color: #000;
+}
+
+.oroceleste_CheckPoint .certification .certification-list li img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* iOS Safari에서만 background-attachment: fixed 문제 해결 */
+@supports (-webkit-touch-callout: none) {
+
+    .spain,
+    .oroceleste_grade {
+        background-attachment: scroll;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* iOS에서 각 섹션별로 개별 배경 처리 */
+    .spain::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/oroceleste/mainbanner/almazaras_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        will-change: transform;
+    }
+
+    .oroceleste_grade::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/oroceleste/mainbanner/oroceleste_grade_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: -1;
+        will-change: transform;
+    }
+}
+
+/* 모바일 반응형*/
+@media all and (max-width:1024px) {
+
+    h3 {
+        margin: 20px 0;
+    }
+
+    .selectOroceleste {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_content {
+        padding: 80px 20px;
+    }
+
+    .oroCeleste-wrap {
+        width: 100%;
+    }
+
+    .titleTxt p {
+        margin: 20px 0 0 0;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 400;
+        color: #fff;
+        word-break: keep-all;
+    }
+
+    .spain .img_wrap {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .spain .img_wrap .prize_img_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .spain .img_wrap .prize_img_wrap .prize {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .spain .img_wrap .prize_img_wrap .prize li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .oroCeleste-wrap .grade {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+        color: #fff;
+    }
+
+    .oroCeleste-wrap .grade .grade-list {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .oroCeleste-wrap .grade .grade-list li {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        height: calc(426px / 5);
+    }
+
+    .oroCeleste-wrap .grade .grade-list li .txt {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .oroceleste_CheckPoint {
+        height: auto;
+        background: url(/oroceleste/mainbanner/checkPoint_bg_mo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .oroceleste_CheckPoint .certification {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .oroceleste_CheckPoint .certification .certification-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+
+    .oroceleste_CheckPoint .certification .certification-list li {
+        margin: 40px 0 0 0;
+    }
+
+    /* 모바일에서 iOS Safari 최적화 */
+    @supports (-webkit-touch-callout: none) {
+
+        .spain,
+        .oroceleste_grade {
+            overflow: hidden;
+        }
+
+        .spain::before,
+        .oroceleste_grade::before {
+            position: absolute;
+            height: 100%;
+            /* 각 섹션 높이에만 맞춤 */
+        }
+    }
+}

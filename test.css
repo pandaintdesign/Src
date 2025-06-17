@@ -1,0 +1,1150 @@
+/* 전체 공통 */
+#iReview {
+    position: relative;
+}
+
+#iReview .point {
+    font-size: 0;
+    line-height: 0;
+}
+
+#iReview .point img {
+    display: block;
+    width: auto;
+    height: 13px;
+}
+
+#iReview .rvsbj {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #000;
+    word-break: keep-all;
+    cursor: pointer;
+}
+
+#iReview .rvsbj .ec-common-rwd-image {
+    margin-right: 3px;
+    vertical-align: -2px;
+    max-height: 21px;
+}
+
+#iReview .rvcont {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+#iReview .rvcont,
+#iReview .rvcont p,
+#iReview .fr-view,
+#iReview .fr-view p {
+    font-size: 14px;
+    color: #545454;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+#iReview .badge {
+    font-size: 0;
+    line-height: 0;
+    vertical-align: 1px;
+}
+
+#iReview .badge em {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0 4px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #000;
+    vertical-align: 1px;
+    margin-right: 6px;
+    font-style: normal;
+}
+
+#iReview .badge img {
+    margin-right: 7px;
+}
+
+#iReview .rvname {
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+#iReview .date {
+    font-size: 11px;
+    line-height: 15px;
+    color: #777;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+#iReview .chk input {
+    position: absolute;
+    z-index: 3;
+    top: 28px;
+    left: 28px;
+    right: unset;
+    bottom: unset;
+}
+
+#iReview .rvlist.re .imgbox {
+    background-image: none !important;
+}
+
+#iReview .rvlist.re .point,
+#iReview .rvlist.re .prd {
+    display: none;
+}
+
+#iReview .ico_re {
+    margin-left: -9px;
+}
+
+#iReview .boardComment {
+    padding-top: 16px;
+    background-color: transparent;
+}
+
+#iReview .boardComment>li {
+    margin-top: 12px;
+    border: 0;
+    background-color: #f8f8f8;
+}
+
+#iReview .boardComment>li:before {
+    display: none;
+}
+
+#iReview .boardComment>li div.commentTop {
+    overflow: hidden;
+    padding: 0;
+}
+
+#iReview .boardComment>li div.commentTop>* {
+    display: inline-block;
+    line-height: 21px;
+    vertical-align: bottom;
+}
+
+#iReview .boardComment>li .name,
+#iReview .boardComment>li .name a {
+    color: #333;
+    font-weight: 500;
+}
+
+#iReview .boardComment>li .date {
+    color: #777;
+}
+
+#iReview .boardComment>li .comment {
+    display: block;
+    word-break: break-all;
+    color: #545454;
+    margin-top: 10px;
+}
+
+.xans-product-additional #iReview {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+@media all and (max-width:1024px) {
+    #iReview .point img {
+        height: 11px;
+    }
+
+    #iReview .rvname,
+    #iReview .prd_name,
+    #iReview .date {
+        font-size: 11px;
+    }
+
+    #iReview .rvsbj {
+        font-size: 13px;
+    }
+
+    #iReview .rvsbj .ec-common-rwd-image {
+        max-height: 14px;
+    }
+
+    #iReview .badge em {
+        line-height: 13px;
+        vertical-align: 0;
+        margin-right: 4px;
+    }
+
+    #iReview .txtWarn {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    #iReview .rvcont,
+    #iReview .rvcont p,
+    #iReview .fr-view,
+    #iReview .fr-view p {
+        font-size: 12px;
+    }
+
+    #iReview .no em {
+        padding: 0 4px;
+        vertical-align: 0;
+        margin-right: 5px;
+    }
+
+    #iReview .no img {
+        margin-right: 5px;
+    }
+
+    #iReview .img {
+        right: 0;
+        width: 76px;
+        height: 76px;
+    }
+
+    #iReview .boardComment>li {
+        padding: 30px 35px 10px;
+    }
+
+    #iReview .boardComment>li .name,
+    #iReview .boardComment>li .name a {
+        font-size: 11px;
+    }
+
+    #iReview .boardComment>li .date {
+        margin: 0 10px;
+        font-size: 11px;
+    }
+
+    #iReview .boardComment>li .comment {
+        font-size: 12px;
+        margin: 7px 0 0;
+    }
+}
+
+@media all and (max-width:420px) {
+    #iReview .point img {
+        height: 10px;
+    }
+
+    #iReview .prd_name {
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        overflow: hidden;
+    }
+
+    #iReview .rvname,
+    #iReview .prd_name,
+    #iReview .date {
+        font-size: 10px;
+    }
+
+    #iReview .badge em {
+        font-size: 9px;
+        line-height: 13px;
+        padding: 0 3px;
+        vertical-align: 0;
+        margin-right: 4px;
+    }
+}
+
+
+/* 썸네일타입 */
+#iReview .tmbType.xans-board-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#iReview .tmbType>.slide,
+#iReview .tmbType .swiper-slide {
+    padding: 8px;
+    position: relative;
+}
+
+#iReview .tmbType .rvlist {
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    border-radius: 13px;
+    transition: all 0.5s ease;
+}
+
+#iReview .tmbType .rvlist:hover {
+    border: 1px solid transperent;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+#iReview .tmbType .imgbox {
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    padding-bottom: 100%;
+    cursor: pointer;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all 0.3s;
+    -khtml-transition: all 0.3s ease;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#iReview .tmbType .imgbox img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+
+#iReview .tmbType .imgbox img.attImg {
+    z-index: 2;
+}
+
+#iReview .tmbType .rvlist:hover .imgbox {
+    filter: brightness(97%);
+}
+
+#iReview .tmbType .txtbox {
+    width: 100%;
+    padding: 25px 18px;
+    height: 260px;
+}
+
+#iReview .tmbType .point img {
+    margin-bottom: 14px;
+}
+
+#iReview .tmbType .no {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+}
+
+#iReview .tmbType .rvsbj {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+#iReview .tmbType .rvsbj>* {
+    display: inline-block;
+}
+
+#iReview .tmbType .rvcont {
+    -webkit-line-clamp: 2;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+#iReview .tmbType .rvcont,
+#iReview .tmbType .rvcont p,
+#iReview .tmbType .fr-view,
+#iReview .tmbType .fr-view p {
+    line-height: 1.5;
+}
+
+#iReview .tmbType .wrt {
+    margin-top: 12px;
+}
+
+#iReview .tmbType .rvname {
+    font-weight: normal;
+    margin-right: 6px;
+}
+
+#iReview .tmbType .prd {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    padding: 0 35px;
+    margin-bottom: 0;
+}
+
+#iReview .tmbType .prd .border {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    height: 72px;
+    text-align: left;
+    font-size: 0;
+    line-height: 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+#iReview .tmbType .prd .border>a {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #777;
+    line-height: 38px;
+    font-weight: 400;
+    padding-left: 48px;
+}
+
+#iReview .tmbType .prd .border>a>span {
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+}
+
+#iReview .tmbType .prd .border>a>span>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*모바일*/
+@media all and (max-width:1024px) {
+
+    #iReview .tmbType>.slide,
+    #iReview .tmbType .swiper-slide {
+        padding: 6px;
+    }
+
+    #iReview .tmbType .rvlist:hover {
+        border: 1px solid transperent;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #iReview .tmbType .txtbox {
+        padding: 16px 15px;
+        height: 200px;
+    }
+
+    #iReview .tmbType .point img {
+        margin-bottom: 10px;
+    }
+
+    #iReview .tmbType .rvcont {
+        margin-top: 2px;
+    }
+
+    #iReview .tmbType .wrt {
+        margin-top: 8px;
+    }
+
+    #iReview .tmbType .date {
+        display: none;
+    }
+
+    #iReview .tmbType .prd {
+        padding: 0 28px;
+        bottom: 6px;
+    }
+
+    #iReview .tmbType .prd .border {
+        padding: 12px 0;
+        height: 54px;
+    }
+
+    #iReview .tmbType .prd .border>a {
+        font-size: 11px;
+        line-height: 28px;
+        padding-left: 38px;
+    }
+
+    #iReview .tmbType .prd .border>a>span {
+        top: 12px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media all and (max-width:420px) {
+    #iReview .tmbType .txtbox {
+        padding: 14px 10px;
+        height: 182px;
+    }
+
+    #iReview .tmbType .point img {
+        margin-bottom: 9px;
+    }
+
+    #iReview .tmbType .wrt {
+        margin-top: 7px;
+    }
+
+    #iReview .tmbType .prd {
+        padding: 0 23px;
+        bottom: 9px;
+    }
+
+    #iReview .tmbType .prd .border {
+        padding: 10px 0;
+        height: 44px;
+    }
+
+    #iReview .tmbType .prd .border>a {
+        font-size: 10px;
+        line-height: 24px;
+        padding-left: 30px;
+    }
+
+    #iReview .tmbType .prd .border>a>span {
+        top: 10px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+/*tmbType grid*/
+@media all and (max-width:320px) {
+    #iReview .tmbType>.slide {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+@media all and (min-width:321px) and (max-width:840px) {
+    #iReview .tmbType>.slide {
+        flex-basis: 50%;
+        width: 50%;
+    }
+}
+
+@media all and (min-width:841px) and (max-width:1280px) {
+    #iReview .tmbType>.slide {
+        flex-basis: 33.333%;
+        width: 33.333%;
+    }
+}
+
+@media all and (min-width:1281px) and (max-width:1640px) {
+    #iReview .tmbType>.slide {
+        flex-basis: 25%;
+        width: 25%;
+    }
+}
+
+@media all and (min-width:1640px) {
+    #iReview .tmbType>.slide {
+        flex-basis: 20%;
+        width: 20%;
+    }
+}
+
+
+/* 리스트타입 */
+#iReview .listType .prdReview_wrapper {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#iReview .listType .subject {
+    position: relative;
+}
+
+#iReview .listType .subject>* {
+    display: block;
+}
+
+#iReview .listType .rvcont {
+    margin-top: 6px;
+    display: block;
+    -webkit-line-clamp: unset;
+}
+
+#iReview .listType .rvcont.of {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#iReview .listType .rvcont-wrapper.opened .rvcont.of {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+}
+
+#iReview .listType .rvsbj {
+    line-height: 1.55;
+}
+
+#iReview .listType .btn_rvread {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 7px;
+    text-decoration: underline;
+    text-align: left;
+    letter-spacing: -0.2px;
+}
+
+#iReview .listType .btn_rvread i {
+    display: inline;
+    font-size: 9px;
+}
+
+#iReview .listType .btn_rvread i.fa-chevron-up {
+    display: none;
+}
+
+#iReview .listType .btn_rvread i.fa-chevron-down {
+    display: inline;
+}
+
+#iReview .listType .rvcont-wrapper.opened .btn_rvread i.fa-chevron-up {
+    display: inline;
+}
+
+#iReview .listType .rvcont-wrapper.opened .btn_rvread i.fa-chevron-down {
+    display: none;
+}
+
+#iReview .listType .attach {
+    cursor: pointer;
+}
+
+#iReview .listType .attach img {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    margin: 24px 6px 0 0;
+}
+
+#iReview .listType .attach br {
+    display: none;
+}
+
+#iReview .listType .ec-ucc-media-box {
+    display: none;
+}
+
+#iReview .listType .ec-base-button {
+    display: none;
+    margin: 0;
+    text-align: left;
+}
+
+#iReview .listType .ec-base-button a[class^='btn'] {
+    margin-top: 24px;
+}
+
+#iReview .listType .memoCont {
+    padding: 30px;
+    margin: 15px 0 0;
+    border: 0;
+    background-color: #f9f9f9;
+}
+
+#iReview .listType .writeForm:before {
+    display: none;
+}
+
+#iReview .listType .rvlist.opened {
+    background-color: #fcfcfc;
+}
+
+#iReview .listType .rvlist.opened .rvcont {
+    overflow: visible;
+    display: block;
+}
+
+#iReview .listType .rvlist.opened .attach {
+    margin-bottom: 12px;
+}
+
+#iReview .listType .rvlist.opened .attach img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 24px 0 -12px 0;
+}
+
+#iReview .listType .rvlist.opened .btn_rvread i.fa-chevron-up {
+    display: inline;
+}
+
+#iReview .listType .rvlist.opened .btn_rvread i.fa-chevron-down {
+    display: none;
+}
+
+#iReview .listType .view_wrapper#imgBox>div>*:not(.view),
+#iReview .listType .view_wrapper#imgBox .view .ec-base-button {
+    display: none;
+}
+
+#iReview .listType .view_wrapper#cmtBox #commentWriteForm_4,
+#iReview .listType .view_wrapper#cmtBox #commentSecretForm_4,
+#iReview .listType .view_wrapper#cmtBox .view .attach {
+    display: none;
+}
+
+#iReview .listType .imgbox {
+    display: none;
+}
+
+
+/*모바일*/
+@media all and (max-width:1024px) {
+    #iReview .listType .info {
+        margin-bottom: 11px;
+    }
+
+    #iReview .listType .info p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #iReview .listType .point {
+        margin-right: 8px;
+    }
+
+    #iReview .listType .rvlist td.subject {
+        padding: 7px !important;
+    }
+
+    #iReview .listType .rvlist.re td.subject {
+        padding: 7px 7px 7px 30px !important;
+    }
+
+    #iReview .listType .rvcont {
+        margin-top: 3px;
+    }
+
+    #iReview .listType .date {
+        margin-left: 7px;
+    }
+
+    #iReview .listType .info_hr {
+        display: none;
+    }
+
+    #iReview .listType .attach img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 16px 5px 0 0;
+    }
+
+    #iReview .listType .btn_rvread {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    #iReview .listType .boardComment>li {
+        padding: 20px 30px;
+    }
+}
+
+@media all and (max-width:420px) {
+    #iReview .listType .info {
+        font-size: 0;
+        line-height: 0;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal !important;
+        height: unset;
+        margin-bottom: 8px;
+    }
+
+    #iReview .listType .attach img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+/*PC*/
+@media all and (min-width:1025px) {
+    #iReview .listType .point img {
+        margin-bottom: 16px;
+    }
+
+    #iReview .listType .subject {
+        padding: 40px !important;
+    }
+
+    #iReview .listType .info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+
+    #iReview .listType .info *:not(img) {
+        display: block;
+        width: 100%;
+    }
+
+    #iReview .listType .rvname {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    #iReview .listType .rvlist td.subject {
+        padding-left: 290px !important;
+    }
+
+    #iReview .listType .rvlist.re td.subject {
+        padding-left: 330px !important;
+    }
+
+    #iReview .listType .info_hr {
+        position: absolute;
+        display: block;
+        left: 250px;
+        top: 40px;
+        width: 1px;
+        height: calc(100% - 80px);
+        background-color: #e8e8e8;
+    }
+
+    #iReview .listType .boardComment>li {
+        padding: 30px 40px;
+    }
+
+    #iReview .listType .boardComment>li .name,
+    #iReview .listType .boardComment>li .name a {
+        font-size: 12px;
+    }
+
+    #iReview .listType .boardComment>li .date {
+        margin: 0 14px;
+        font-size: 11px;
+    }
+
+    #iReview .listType .boardComment>li .comment {
+        font-size: 14px;
+    }
+}
+
+
+/* 상세페이지 상단 베스트 리뷰 */
+#iReview.dtReview {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+#iReview.dtReview .tit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: 6px;
+}
+
+#iReview.dtReview .tit h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#iReview.dtReview .tit h4:after {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #e8e8e8;
+    content: '';
+    margin: 0 12px 0 14px;
+    vertical-align: -2px;
+}
+
+#iReview.dtReview .tit a {
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: -1px;
+}
+
+#iReview.dtReview .tit a span {
+    font-weight: 600;
+    margin-right: 1px;
+}
+
+#iReview .fixedType {
+    padding: 10px 0;
+}
+
+#iReview .fixedType tr,
+#iReview .fixedType td {
+    display: block;
+    width: 100%;
+}
+
+#iReview .fixedType .rvlist {
+    display: block;
+    border: 1px solid #e8e8e8;
+    padding: 19px 24px 21px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#iReview .fixedType .subject {
+    position: relative;
+    padding: 10px;
+}
+
+#iReview .fixedType .info {
+    height: unset;
+    margin-bottom: 12px;
+    font-size: 0;
+    line-height: 0;
+}
+
+#iReview .fixedType .info>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#iReview .fixedType .info .rvname,
+#iReview .fixedType .info .point img {
+    margin-right: 7px;
+    height: 11px;
+}
+
+#iReview .fixedType .rvsbj {
+    cursor: pointer;
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+#iReview .fixedType .rvcont {
+    -webkit-line-clamp: 3;
+    margin-top: 3px;
+    height: 58px;
+}
+
+#iReview .fixedType .rvcont,
+#iReview .fixedType .rvcont p,
+#iReview .fixedType .fr-view,
+#iReview .fixedType .fr-view p {
+    font-size: 13px;
+}
+
+#iReview .fixedType .rvsbj,
+#iReview .fixedType .rvcont {
+    padding-right: 100px;
+}
+
+#iReview .fixedType .noimg .rvsbj,
+#iReview .fixedType .noimg .rvcont {
+    padding-right: 0;
+}
+
+#iReview .fixedType .imgbox {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    right: 5px;
+    bottom: 10px;
+}
+
+#iReview .fixedType .imgbox img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+
+#iReview .fixedType div[class*='swiper-button'] {
+    opacity: 0 !important;
+    transform: scale(0.7);
+}
+
+#iReview .fixedType:hover div[class*='swiper-button'] {
+    opacity: 1 !important;
+}
+
+#iReview .fixedType .swiper-button-prev {
+    transform-origin: 0% 50%;
+    left: 15px !important;
+}
+
+#iReview .fixedType .swiper-button-next {
+    transform-origin: 100% 50%;
+    right: 15px !important;
+}
+
+
+/*모바일*/
+@media all and (max-width:1024px) {
+    #iReview.dtReview {
+        margin-bottom: 30px;
+    }
+
+    #iReview.dtReview .tit {
+        margin-bottom: 6px;
+    }
+
+    #iReview.dtReview .tit h4 {
+        font-size: 14px;
+    }
+
+    #iReview.dtReview .tit h4:after {
+        margin: 0 9px 0 11px;
+    }
+
+    #iReview.dtReview .tit a {
+        font-size: 12px;
+    }
+
+    #iReview .fixedType .swiper-slide {
+        padding: 0;
+    }
+
+    #iReview .fixedType .rvlist {
+        padding: 10px 15px;
+    }
+
+    #iReview .fixedType .rvcont,
+    #iReview .fixedType .rvcont p,
+    #iReview .fixedType .fr-view,
+    #iReview .fixedType .fr-view p {
+        font-size: 12px;
+    }
+
+    #iReview .fixedType .rvsbj,
+    #iReview .fixedType .rvcont {
+        padding-right: 80px;
+    }
+
+    #iReview .fixedType .imgbox {
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        bottom: 15px;
+        right: 8px;
+    }
+}
+
+
+/* 상품후기 게시판 */
+.rvList .rvArea {
+    position: relative;
+}
+
+.rvList .xans-board-list,
+.rvList .rvArea-wrapper {
+    position: relative;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    min-height: 200px;
+}
+
+.rvList .xans-board-fixed {
+    margin-bottom: 50px;
+}
+
+.rvList .xans-board-fixed h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rvList .noticeArea {
+    margin-bottom: 10px;
+}
+
+.rvList .ec-base-table {
+    border-top: 0;
+}
+
+@media all and (max-width:1024px) {
+    .rvList .rvArea-wrapper {
+        width: calc(100% + 12px);
+        margin-left: -6px;
+    }
+
+    .rvList .xans-board-fixed h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* 읽기 화면 모달 */
+.ireview-modal {
+    display: none;
+    position: fixed;
+    width: 85%;
+    max-width: 1000px;
+    height: 80vh;
+    max-height: 700px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10006;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+    background-color: #fff;
+}
+
+.ireview-modal iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: auto;
+}
+
+.ireview-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 10005;
+}
+
+@media all and (max-width:740px) {
+    .ireview-modal {
+        height: 70vh;
+    }
+}
+
+@media all and (min-width:741px) {
+    .ireview-modal.noimg {
+        max-width: 600px;
+    }
+}
